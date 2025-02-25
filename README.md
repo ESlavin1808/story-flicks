@@ -1,18 +1,18 @@
-English | [简体中文](./README-CN.md)
+Русский | [简体中文](./README-CN.md)
 
-## Project Description
+## Описание проекта
 
-This project allows users to input a story theme and generates a story video using a large language model. The video includes AI-generated images, story content, audio, and subtitles.
+Этот проект позволяет пользователям вводить тему истории и генерирует видео -видео с использованием большой языковой модели. Видео включает в себя изображения, сгенерированные AI, контент истории, аудио и субтитры.
 
-The backend technology stack consists of Python + FastAPI framework, while the frontend is built with React + Ant Design + Vite.
+Стек с технологией бэкэнд состоит из структуры Python + Fastapi, в то время как фронт построен с React + Ant Design + Vite.
 
 ## Video Demonstration
 
 <table>
 <thead>
 <tr>
-<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji> The Story of the Rabbit and the Little Fox</th>
-<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji> The Story of the Big Gray Wolf and the Little White Rabbit</th>
+<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji> История кролика и маленькой лисы</th>
+<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji> История большого серого волка и маленького белого кролика</th>
 </tr>
 </thead>
 <tbody>
@@ -23,19 +23,19 @@ The backend technology stack consists of Python + FastAPI framework, while the f
 </tbody>
 </table>
 
-## Interface Screenshot
+## Интерфейс скриншот
 
 ![](backend/examples/screenshot/usage.jpg)
 
-## Usage Instructions
+## Инструкции по использованию
 
-### 1. Download the project
+### 1. Загрузите проект
 
 ```
 git clone https://github.com/alecm20/story-flicks.git
 ```
 
-### 2. Set model information
+### 2. Установите информацию модели
 
 ```
 # First, switch to the project’s backend directory first.
@@ -43,7 +43,7 @@ cd backend
 cp .env.example .env
 
 
-text_provider = "openai"  # Provider of the text generation model. Currently supports openai, aliyun, deepseek, ollama, and siliconflow.  
+text_provider = "openai"  # Поставщик модели генерации текста. В настоящее время поддерживает Openai, Aliyun, Deepseek, Ollama и Siliconflow.  
                           # Aliyun documentation: https://www.aliyun.com/product/bailian
 
 image_provider = "aliyun"  # Provider of the image generation model. Currently supports openai, aliyun, and siliconflow.
@@ -74,9 +74,9 @@ text_llm_model=gpt-4o # If text_provider is set to openai, only OpenAI models ca
 image_llm_model=flux-dev # If image_provider is set to openai, only OpenAI models can be used, such as dall-e-3. If aliyun is selected, Aliyun models like flux-dev are recommended, which are currently available for free trial. More details: https://help.aliyun.com/zh/model-studio/getting-started/models#a1a9f05a675m4.
 ```
 
-### 3. Start the project
+### 3. Начните проект
 
-#### 3.1 Manual Startup
+#### 3.1 Ручной стартап
 
 **Start the backend project**
 
