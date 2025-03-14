@@ -1,5 +1,5 @@
-# 使用 Node 22 镜像（确保 ARM 架构）
-FROM arm64v8/node:22
+# 使用 Node 22 镜像
+FROM node:22
 
 # 设置工作目录
 WORKDIR /app
